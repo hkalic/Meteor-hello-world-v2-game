@@ -1,0 +1,23 @@
+<head>
+  <title>hello</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div>{{> loginButtons}}</div>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#if currentUser}}
+    <button>Click Me</button>
+    <p>You've pressed the button {{counter}} times.</p>
+  {{else}}
+    <p>
+      Please register and Sign in<br>
+      First player with >=50 clicks WINS!!!!
+    </p>
+  {{/if}}
+</template>
