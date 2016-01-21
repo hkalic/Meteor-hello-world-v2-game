@@ -1,11 +1,12 @@
 # Meteor-hello-world-v2-game
 
-This is little game wich I made for my presentation on **Meteor** (https://www.meteor.com/).
+This is little multi player game wich I made for my presentation on **Meteor** (https://www.meteor.com/).
+The game is trying to demonstrate basics of Meteor platform in wich audience can participate.
 
 It's Meteor default app on "steroid" (not really), transformed to a game.
 
 ### Packages used:
-- removed *`autopublish`* package because I wanted to use observe changes on collection. To me it looks like natural place to do this stuff.
+- removed *`autopublish`* package because I wanted to observe changes on collection in *subscribe*. To me it looks like natural place to do this stuff.
 - *`check`* for one argument in *Meteor.methods* call
 - *`msavin:mongol`* for collection administration (removing users and their click count :-) )
 - *`chrismbeckett:toastr`* for flashy notification
